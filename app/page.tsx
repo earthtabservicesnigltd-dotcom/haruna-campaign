@@ -1,6 +1,4 @@
 "use client";
-
-import { useScrollReveal } from "@/hooks/use-scroll-reveal";
 import { HeroSection } from "@/components/sections/hero-section";
 import { AboutSection } from "@/components/sections/about-section";
 import { WhyRunningSection } from "@/components/sections/why-running-section";
@@ -13,7 +11,6 @@ import { CtaBannerSection } from "@/components/sections/cta-banner-section";
 import { InvolveSection } from "@/components/sections/involve-section";
 
 export default function HomePage() {
-  useScrollReveal();
 
   return (
     <>

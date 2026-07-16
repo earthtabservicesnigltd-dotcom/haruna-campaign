@@ -64,7 +64,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-11 py-13 border-b border-white/14">
           <div className="lg:col-span-1 md:col-span-2">
             <div className="flex items-center gap-3.5 mb-4">
-              <Image src="/images/senatorial_logo_clean_50x50.png" alt="Campaign logo" width={64} height={64} />
+              <Image src="/images/logo.png" alt="Campaign logo" width={64} height={64} className="rounded-full" />
               <Image src="/images/08.png" alt="ADC logo" width={50} height={50} />
             </div>
             <p className="text-sm text-white/60 leading-relaxed max-w-[34ch]">{siteConfig.description}</p>

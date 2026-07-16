@@ -37,11 +37,11 @@ export function Header() {
         {/* Brand */}
         <Link href="/" className="flex items-center gap-2.5 min-w-0">
           <Image
-            src="/images/senatorial_logo_clean_50x50.png"
+            src="/images/logo.png"
             alt="Campaign logo"
             width={40}
             height={40}
-            className="h-10 w-auto shrink-0"
+            className="h-10 w-auto shrink-0 rounded-full"
           />
           <small className="font-mono text-[10px] text-orange tracking-widest uppercase whitespace-nowrap">
             {siteConfig.tagline}

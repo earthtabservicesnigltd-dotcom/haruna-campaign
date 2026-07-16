@@ -6,6 +6,7 @@ import { IndexStrip } from "@/components/layout/index-strip";
 import { Preloader } from "@/components/layout/preloader";
 import { siteConfig } from "@/lib/site-config";
 import "./globals.css";
+import { ClientLayout } from "@/components/layout/client-layout";
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -42,10 +43,12 @@ export default function RootLayout({
         className={`${fraunces.variable} ${workSans.variable} ${ibmPlexMono.variable} is-loading antialiased`}
       >
         <Preloader />
-        <Header />
-        <IndexStrip />
-        <main>{children}</main>
-        <Footer />
+        <ClientLayout>
+          <Header />
+          <IndexStrip />
+          <main>{children}</main>
+          <Footer />
+        </ClientLayout>
       </body>
     </html>
   );
