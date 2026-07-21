@@ -42,13 +42,7 @@ export default function RootLayout({
       <body
         className={`${fraunces.variable} ${workSans.variable} ${ibmPlexMono.variable} is-loading antialiased`}
       >
-        <Preloader />
-        <ClientLayout>
-          <Header />
-          <IndexStrip />
-          <main>{children}</main>
-          <Footer />
-        </ClientLayout>
+        {children}
       </body>
     </html>
   );

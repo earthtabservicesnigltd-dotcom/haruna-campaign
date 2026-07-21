@@ -3,8 +3,7 @@ import { Coins, BookOpen } from "lucide-react";
 
 export function IndexStrip() {
   return (
-    <div className="index-strip rise bg-paper border-b border-ink/8 py-2.5">
-      <div className="max-w-site mx-auto px-8 flex justify-between items-center flex-wrap gap-2">
+      <div className="index-strip rise bg-none lg:bg-paper border-b border-ink/8 py-2.5 max-w-site mx-auto px-8 hidden lg:flex justify-between items-center flex-wrap gap-2">
         <span className="font-mono text-[11.5px] tracking-wide text-slate">
           EDO NORTH SENATORIAL DISTRICT · 2027 GENERAL ELECTION
         </span>
@@ -26,6 +25,5 @@ export function IndexStrip() {
           </Link>
         </div>
       </div>
-    </div>
   );
 }

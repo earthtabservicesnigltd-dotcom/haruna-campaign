@@ -64,7 +64,7 @@
   --font-mono: var(--font-ibm-plex-mono), monospace;
 
   /* Custom Layout & Spacing */
-  --max-w-site: 1180px;
+  --max-w-site: 900px;
   --radius-site: 2px;
 }
 

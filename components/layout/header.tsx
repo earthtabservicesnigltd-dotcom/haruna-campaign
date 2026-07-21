@@ -13,6 +13,7 @@ import {
   SheetHeader,
   SheetTitle,
   SheetTrigger,
+  SheetClose,
 } from "@/components/ui/sheet";
 import { mainNav, siteConfig } from "@/lib/site-config";
 import { cn } from "@/lib/utils";
@@ -72,22 +73,22 @@ export function Header() {
           <SheetTrigger 
             className={cn(
               "lg:hidden",
-              buttonVariants({ variant: "ghost", size: "icon" })
+              buttonVariants({ variant: "secondary", size: "icon" })
             )}
             aria-label="Toggle navigation"
           >
-            {/* icon */}
+            {open ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </SheetTrigger>
 
 
           <SheetContent
             side="right"
-            className="w-[min(87vw,360px)] bg-ink text-white border-none p-0"
+            className="w-[min(87vw,360px)] bg-ink text-white border-none"
           >
             <SheetHeader className="border-b border-white/12 px-6 py-5 text-left">
               <SheetTitle className="text-white font-display text-lg">
                 <Image
-                  src="/images/senatorial_logo_clean_50x50.png"
+                  src="/images/logo.png"
                   alt="Home"
                   width={55}
                   height={55}
@@ -97,9 +98,10 @@ export function Header() {
                   {siteConfig.tagline}
                 </span>
               </SheetTitle>
+
             </SheetHeader>
 
-            <ul className="py-2">
+            <ul className="">
               {mainNav.map((item) => (
                 <li key={item.href} className="border-b border-white/6">
                   <Link
