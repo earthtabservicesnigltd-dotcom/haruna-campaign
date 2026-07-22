@@ -9,7 +9,7 @@ export function AboutHeroSection() {
   return (
     <section className="py-18 pb-14 bg-white border-b border-ink/8">
       <div className="max-w-site mx-auto px-8 grid lg:grid-cols-[1fr_1fr] gap-12 items-center">
-        <div>
+        <div className="self-start">
           <nav className="font-mono text-[11.5px] tracking-wide text-slate mb-4">
             <Link href="/" className="text-orange hover:border-b border-orange">Home</Link>
             <span className="mx-2">/</span>
